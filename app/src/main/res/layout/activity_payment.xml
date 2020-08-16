@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.musicalstructure.PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/label_payment"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/paymentdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="The payment activity is from the Stripe API external library found on Github. In the payment activity the user should input their credit card information into the add payment method in order to purchase a song."
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="The purpose of this activity is to display the payment activity in the Musical Structure app. For the Musical Structure app, implementing the functionality of the payment api is not required. However the user is made aware of the payment activty in the payment screen."
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/token_list_title"
+        style="@style/Header.Light"
+        android:layout_marginTop="12dp"
+        android:text="@string/paymentMethods"/>
+
+    <TextView
+        android:id="@+id/payment_form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addPayment" />
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/button_previousActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="previousActivity"
+            android:text="@string/button_previousActivity" />
+
+        <Button
+            android:id="@+id/button_nextActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="nextActivity"
+            android:text="@string/button_nextActivity" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

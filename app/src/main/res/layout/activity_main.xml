@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructure.MainActivity">
+
+    <TextView
+        android:id="@+id/label_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/label_app_name"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_app_name"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:text="The purpose of this activity is to display the main activity in the Musical Structure app. The activities are listed below the description of the Musical Structure Screen." />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appname"
+        android:padding="16dp"
+        android:text="@string/category_payment"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nowplaying"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/payment"
+        android:padding="16dp"
+        android:text="@string/category_nowplaying"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/albums"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nowplaying"
+        android:padding="16dp"
+        android:text="@string/category_albums"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/artists"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/albums"
+        android:padding="16dp"
+        android:text="@string/category_artists"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/playlists"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/artists"
+        android:padding="16dp"
+        android:text="@string/category_playlists"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/podcasts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/playlists"
+        android:padding="16dp"
+        android:text="@string/category_podcasts"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

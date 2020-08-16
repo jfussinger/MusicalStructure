@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructure.AlbumsActivity">
+
+    <TextView
+        android:id="@+id/label_albums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/label_albums"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/artists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_albums"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:text="The purpose of this activity is to display the albums activity in the Musical Structure app" />
+
+    <Button
+        android:id="@+id/button_previousActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="previousActivity"
+        android:text="@string/button_previousActivity" />
+
+    <Button
+        android:id="@+id/button_nextActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="nextActivity"
+        android:text="@string/button_nextActivity" />
+
+</RelativeLayout>
